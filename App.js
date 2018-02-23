@@ -5,7 +5,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Automatic deployment to Expo is working!!!</Text>
+        <Text>Testing Expo user name and password!!</Text>
       </View>
     );
   }
