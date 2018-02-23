@@ -45,7 +45,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn run exp login --username EXPO_USER_NAME --password EXPO_PASSWORD
+      - run: yarn run exp login --username ndsmith --password ad4jkj2hd
       - run:
           name: Deploying to Expo
           command: yarn run exp publish
