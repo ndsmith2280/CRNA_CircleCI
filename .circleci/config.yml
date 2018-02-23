@@ -47,7 +47,7 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run:
           name: Deploying to Expo
-          command: eyarn run exp deploy
+          command: yarn run exp deploy
 
 workflows:
   version: 2
