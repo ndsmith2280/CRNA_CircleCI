@@ -48,7 +48,7 @@ jobs:
       - run: yarn run exp login --username EXPO_USER_NAME --password EXPO_PASSWORD
       - run:
           name: Deploying to Expo
-          command: eyarn run exp build:android
+          command: eyarn run exp deploy
 
 workflows:
   version: 2
