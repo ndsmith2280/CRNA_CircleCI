@@ -7,4 +7,4 @@ it('renders without crashing', () => {
   expect(rendered).toBeTruthy();
 });
 
-afterAll(() => setTimeout(() => process.exit(), 10000))
+afterAll(() => setTimeout(() => process.exit(), 1000))
