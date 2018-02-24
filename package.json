@@ -1,5 +1,5 @@
 {
-  "name": "Herkyles",
+  "name": "herkyles",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -13,15 +13,27 @@
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
-    "test": "node node_modules/jest/bin/jest.js --coverage --verbose --colors"
+    "test": "node node_modules/jest/bin/jest.js  --coverage --colors --verbose"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native",
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    }
   },
   "dependencies": {
     "expo": "^25.0.0",
-    "jest": "^22.4.2",
+    "firebase": "^4.10.0",
+    "jest": "^22.3.0",
+    "native-base": "^2.3.8",
     "react": "16.2.0",
-    "react-native": "0.52.0"
+    "react-native": "0.52.0",
+    "react-native-scroll-to-top": "^1.1.0",
+    "react-navigation": "^1.0.3"
   }
 }
